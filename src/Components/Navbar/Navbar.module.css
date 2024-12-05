@@ -1,0 +1,92 @@
+:root {
+  --cor-primaria: #396639;
+  --cor-secundaria: #63a142;
+  --cor-terciaria: #fcfbfb;
+}
+
+.nav_menu {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 1.6rem;
+  width: 100%;
+  background-color: var(--cor-terciaria);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+}
+
+.nav_menu ul {
+  text-decoration: none;
+  list-style: none;
+  /* Os Uls */
+}
+
+.menuicon {
+  display: none;
+}
+
+.nav_menu li {
+  display: inline-block;
+  padding-right: 2.4rem;
+  padding-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 13px;
+  font-weight: 450;
+  color: var(--cor-primaria);
+  /* Os links do navbar (li) */
+}
+
+.nav_menu li:not(:last-child):hover {
+  color: var(--cor-secundaria);
+  cursor: pointer;
+  transition: color 0.3s linear;
+  /* O último li (Botão) */
+}
+
+.logo {
+  width: 170px;
+}
+
+.btn_contacto {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-terciaria);
+  font-weight: 600;
+  width: 170px;
+  height: 50px;
+  border: none;
+  border-radius: 60px;
+  outline: none;
+  /* O Botão */
+}
+
+@media (max-width: 899px) {
+  .btn_contacto {
+      width: 120px;
+      height: 40px;
+  }
+
+  .nav_menu ul {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      background-color: var(--cor-secundaria);
+      z-index: -1;
+      padding-top: 70px;   
+      transition: 0.5s;
+  }
+
+  .menuicon {
+      display: block;
+      width: 35px;
+      height: 30px;
+      cursor: pointer;
+  }
+
+.list_menu{
+  right: -200px;
+}
+
+}
