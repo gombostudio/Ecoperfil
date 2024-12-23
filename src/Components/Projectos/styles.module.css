@@ -4,11 +4,15 @@
     --cor-terciaria: #fcfbfb;
   }
 
+  .princiSection{
+    margin-top: 32px;
+  }
+
   .section{
     display: flex;
     flex-direction: column;
     gap: 7px;
-    padding: 0px 24px;
+    padding: 0px 32px;
     font-size: clamp(.8rem, 0.85rem + 0.25vw, 1.15rem);
   }
 

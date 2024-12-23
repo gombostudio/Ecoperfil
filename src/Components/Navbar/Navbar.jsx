@@ -24,12 +24,11 @@ function Navbar() {
             />
 
             {/* Menu */}
-            <ul className={toggleMenu ? style.list_menu : ''}>
-            
+            <ul className={`${style.list_menu} ${toggleMenu ? style.active : ''}`}>
                 <li>Home</li>
-                <li>Quem Somos</li>
-                <li>Projectos</li>
-                <li>Galeria</li>
+                <li><a href="#quemsomos">Quem Somos</a></li>
+                <li><a href="#projects">Projectos</a></li>
+                <li><a href="#galeria">Galeria</a></li>
                 <li>
                     <button className={style.btn_contacto}>Contacte-nos</button>
                 </li>

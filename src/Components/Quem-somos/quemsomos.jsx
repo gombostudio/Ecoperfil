@@ -1,5 +1,6 @@
 import React from 'react'
 import style from './quemsomos.module.css'
+import missionImage from '../../assets/missionimg.jpg';
 
 function QuemSomos(){
     return(
@@ -10,26 +11,25 @@ function QuemSomos(){
         </div>
     
 
-        <div className={style.section}> 
+        <div className={style.section} id='quemsomos'> 
 
             <div className={style.section_firsttext}>
                 <h3> <span>QUEM</span> SOMOS </h3>
                 <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci illo ea quas sint nam possimus porro eius nulla laudantium,
-                repudiandae tempora eligendi, modi magnam harum eaque dolor itaque nihil similique.
+                No grupo Ecoperfil, acreditamos que a inovação e a sustentabilidade são às chaves
+                para um futuro melhor.
                 </p>
             </div>
 
             <div className={style.section_img}>
-                <img src='../../public/images/quem-somos.jpg'/>
+                <img src={missionImage}/>
             </div>
 
             <div className={style.section_secondtext}>
             <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Adipisci illo ea quas sint nam possimus porro eius nulla laudantium,
-                repudiandae tempora eligendi, modi magnam harum eaque dolor itaque nihil similique.
+            Somos uma equipa multidisciplinar de engenheiros de especializações diversas,
+            ecólogos e profissionais de saúde, unidos pela paixão de resolver desafios complexos através de abordagens
+            inovadoras, princípios ecológicos e ciência fundamental.
             </p>
             </div>
 

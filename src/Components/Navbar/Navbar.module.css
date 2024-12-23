@@ -1,7 +1,6 @@
 :root {
   --cor-primaria: #396639;
   --cor-secundaria: #63a142;
-  --cor-terciaria: #fcfbfb;
 }
 
 .nav_menu {
@@ -16,7 +15,7 @@
   z-index: 10;
 }
 
-.nav_menu ul {
+.list_menu {
   text-decoration: none;
   list-style: none;
   /* Os Uls */
@@ -26,7 +25,12 @@
   display: none;
 }
 
-.nav_menu li {
+.list_menu li a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.list_menu li {
   display: inline-block;
   padding-right: 2.4rem;
   padding-top: 0.5rem;
@@ -37,7 +41,7 @@
   /* Os links do navbar (li) */
 }
 
-.nav_menu li:not(:last-child):hover {
+.list_menu li:not(:last-child):hover {
   color: var(--cor-secundaria);
   cursor: pointer;
   transition: color 0.3s linear;
@@ -61,22 +65,39 @@
 }
 
 @media (max-width: 899px) {
+
+  .nav_menu{
+
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+  }
+
+
   .btn_contacto {
       width: 120px;
       height: 40px;
   }
 
-  .nav_menu ul {
+  .list_menu {
       position: fixed;
       top: 0;
       right: 0;
       bottom: 0;
       width: 200px;
-      background-color: var(--cor-secundaria);
+      background-color: rgba(252, 251, 251, 0.85);
       z-index: -1;
       padding-top: 70px;   
       transition: 0.5s;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
   }
+
+
+  .active{
+    right: -200px;
+   }
 
   .menuicon {
       display: block;
@@ -84,9 +105,5 @@
       height: 30px;
       cursor: pointer;
   }
-
-.list_menu{
-  right: -200px;
-}
 
 }

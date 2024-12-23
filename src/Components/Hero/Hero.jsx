@@ -13,23 +13,23 @@ function Hero() {
       <Carousel.Item interval={1000}>
         <img src={img1} className={style.img}/>
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>Ecoperfil Engenharia ltd</h3>
+          <p>Transformar a natureza para o bem-estar em harmonia.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item interval={500}>
         <img src={img2} className={style.img}/>
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>Ecoperfil Engenharia ltd</h3>
+          <p>E o seu compromisso com a saúde.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img src={img3} className={style.img}/>
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>O Mundo digital nas suas mãos</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          Com a EcoNet, acesso à internet de qualidade e velocidade sem limites.
           </p>
         </Carousel.Caption>
       </Carousel.Item>

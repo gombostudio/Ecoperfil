@@ -6,6 +6,7 @@ const Projects = () => {
   return (
 
     <>
+    <div id='projects' className={style.princiSection}>
      <div className={style.text_and_line}>
        <span>Engenharia e Ecologia</span>
        <div></div>
@@ -15,19 +16,20 @@ const Projects = () => {
         <div className={style.section_lefttext}>
           <h3>PROJECTOS</h3>
           <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-          Lorem Ipsum has been the industry's standard dummy
+           No grupo EcoPerfil, abraçamos a diversidade, a criactividade e a colaboração.
+           Acreditamos que, ao unir diferentes perspectivas e competências, podemos enfrentar
+           qualquer desafio e criar soluções verdadeiramente transformadoras.
           </p>
         </div>
 
         <div className={style.section_righttext}>
           <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+           Junte-se a nós
+           nesta jornada de inovação e descubra como podemos construir um futuro melhor, juntos.
           </p>
 
         </div>
+     </div>
      </div>
     </>
   )
